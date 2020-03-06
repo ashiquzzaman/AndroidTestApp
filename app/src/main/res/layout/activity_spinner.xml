@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background">
+
+
+    <!-- Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/lblAcc"
+        android:textColor="@android:color/white"/>
+
+    <!-- Spinner Dropdown -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="10dip"
+        android:entries="@array/acc_type"
+        android:textColor="@android:color/white"/>
+
+    <!-- Select Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/lblSubAcc"
+        android:textColor="@android:color/white"/>
+
+    <!-- Spinner Dropdown -->
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="Amount"
+        android:textColor="@android:color/white"/>
+
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dip"
+        android:gravity="center"
+        android:padding="8dip"
+        android:textColor="@android:color/black"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+
+    <!-- Click Button  android:textSize="48sp" -->
+
+    <Button
+        android:id="@+id/newActivityBtn"
+        android:text="New Activity"
+        android:background="#ffffff"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="110dip"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/newAppBtn"
+        android:text="External App"
+        android:background="#ffffff"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="110dip"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/stopWatchBtn"
+        android:text="Stop Watch"
+        android:background="#ffffff"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="110dip"
+        android:textStyle="bold"
+        />
+
+<!--    android:text="@string/txtResult"-->
+</LinearLayout>

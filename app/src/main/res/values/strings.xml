@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Home Work</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblAcc">Select Account Type</string>
+    <string name="lblSubAcc">Select Account Head</string>
+    <string name="suAcc">Account Type</string>
+    <string name="suSubAcc">Account Head</string>
+    <string name="txtResult">Result</string>
+    <string name="lblResult">Result</string>
+    <string-array name="acc_type">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+</resources>

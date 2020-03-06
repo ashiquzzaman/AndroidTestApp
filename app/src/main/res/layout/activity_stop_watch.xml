@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopWatchActivity"
+    android:background="@drawable/background">
+
+
+    <!--    <include-->
+    <!--        layout="@layout/activity_stopwatch"-->
+    <!--        tools:layout_editor_absoluteX="66dp"-->
+    <!--        tools:layout_editor_absoluteY="270dp" />-->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="90dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:text="00:00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimer"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="120dp"
+            android:paddingBottom="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Start"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTimer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="41dp"
+            android:id="@+id/btStart" />
+
+        <Button
+            android:text="Pause"
+            android:id="@+id/btPause"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/btStart"
+            android:layout_alignBottom="@+id/btStart"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Reset"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btPause"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btReset" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
