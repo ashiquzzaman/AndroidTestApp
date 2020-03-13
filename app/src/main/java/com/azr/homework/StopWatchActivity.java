@@ -3,12 +3,15 @@ package com.azr.homework;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Application;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class StopWatchActivity extends AppCompatActivity {
 
@@ -23,7 +26,7 @@ public class StopWatchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stop_watch);
 
-
+        Toast.makeText(getApplicationContext(),"lifecycle-onCreate invoked",Toast.LENGTH_SHORT).show();
         Bundle bundle = getIntent().getExtras();
         // String result = bundle.getString("txtValue");
 
@@ -103,5 +106,34 @@ public class StopWatchActivity extends AppCompatActivity {
         }
 
     };
-
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(getApplicationContext(),"lifecycle-onStart invoked",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(getApplicationContext(),"lifecycle-onResume invoked",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(getApplicationContext(),"lifecycle-onPause invoked",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(getApplicationContext(),"lifecycle-onStop invoked",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(getApplicationContext(),"lifecycle-onRestart invoked",Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(getApplicationContext(),"lifecycle-onDestroy invoked",Toast.LENGTH_SHORT).show();
+    }
 }
